@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHINOSTATS - POS Desktop</title>
+  <link rel="stylesheet" href="../styles/pos.css">
+</head>
+<body>
+  <div class="pos-layout">
+    
+    <!-- Zona Izquierda: Catálogo y Productos -->
+    <main class="pos-main">
+      <header class="pos-header">
+        <h1>CHINOSTATS POS</h1>
+        <span class="badge-sucursal">Sucursal Principal</span>
+      </header>
+
+      <!-- Barra de Categorías -->
+      <nav class="categorias-nav">
+        <button class="btn-cat active">Arroces</button>
+        <button class="btn-cat">Proteínas</button>
+        <button class="btn-cat">Entradas</button>
+        <button class="btn-cat">Bebidas</button>
+        <button class="btn-cat">Combos</button>
+      </nav>
+
+      <!-- Grid de Productos (Vacío por ahora) -->
+      <section class="grid-productos">
+        <div class="card-placeholder">Selecciona una categoría</div>
+      </section>
+    </main>
+
+    <!-- Zona Derecha: Comanda / Ticket de Venta -->
+    <aside class="pos-sidebar">
+      <div class="ticket-header">
+        <h2>Orden #---</h2>
+        <span class="canal-tag">Mostrador</span>
+      </div>
+
+      <div class="ticket-body">
+        <div class="empty-ticket">No hay productos en la orden</div>
+      </div>
+
+      <div class="ticket-footer">
+        <div class="resumen-linea">
+          <span>Subtotal</span>
+          <span>$0.00</span>
+        </div>
+        <div class="resumen-linea total">
+          <span>Total</span>
+          <span>$0.00</span>
+        </div>
+        <div class="ticket-acciones">
+          <button class="btn-secundario">Cancelar</button>
+          <button class="btn-primario">Cobrar</button>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* Modal de Pago */
+.modal-pago-container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-pago-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-pago-header h2 {
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.modal-pago-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Resumen del total */
+.pago-summary {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-label {
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.summary-monto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+/* Botones de métodos de pago */
+.metodos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.btn-metodo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 8px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #374151;
+  transition: all 0.15s ease;
+}
+
+.btn-metodo .metodo-icon {
+  font-size: 1.5rem;
+}
+
+.btn-metodo:hover {
+  border-color: #fca5a5;
+}
+
+.btn-metodo.active {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+/* Calculadora / Input de vuelto */
+.calculadora-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input-monto {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.input-monto:focus {
+  border-color: #dc2626;
+}
+
+.cambio-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.monto-cambio {
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+/* Footer del modal */
+.modal-pago-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-cancelar-pago {
+  padding: 12px 20px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-confirmar-pago {
+  padding: 12px 20px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}

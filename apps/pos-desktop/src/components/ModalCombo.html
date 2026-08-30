@@ -1,0 +1,58 @@
+<div class="modal-overlay">
+  <div class="modal-container">
+    <header class="modal-header">
+      <div>
+        <h2>Armar Combo Personal</h2>
+        <p class="modal-subtitle">Selecciona los componentes incluidos</p>
+      </div>
+      <button class="btn-cerrar-modal">&times;</button>
+    </header>
+
+    <div class="modal-body">
+      <!-- Paso 1: Selección de Base (Arroces) -->
+      <section class="grupo-combo">
+        <div class="grupo-header">
+          <h3>1. Selecciona la Base</h3>
+          <span class="badge-requerido">Requerido (1/1)</span>
+        </div>
+        <div class="opciones-grid">
+          <label class="opcion-card active">
+            <input type="radio" name="base" checked hidden>
+            <span class="opcion-nombre">Arroz Chao Fan Especial</span>
+          </label>
+          <label class="opcion-card">
+            <input type="radio" name="base" hidden>
+            <span class="opcion-nombre">Arroz Blanco al Vapor</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Paso 2: Selección de Proteína -->
+      <section class="grupo-combo">
+        <div class="grupo-header">
+          <h3>2. Selecciona la Proteína</h3>
+          <span class="badge-requerido">Requerido (0/1)</span>
+        </div>
+        <div class="opciones-grid">
+          <label class="opcion-card">
+            <input type="radio" name="proteina" hidden>
+            <span class="opcion-nombre">Pollo Agridulce</span>
+          </label>
+          <label class="opcion-card">
+            <input type="radio" name="proteina" hidden>
+            <span class="opcion-nombre">Carne con Brócoli</span>
+          </label>
+          <label class="opcion-card">
+            <input type="radio" name="proteina" hidden>
+            <span class="opcion-nombre">Cerdo Agridulce</span>
+          </label>
+        </div>
+      </section>
+    </div>
+
+    <footer class="modal-footer">
+      <button class="btn-secundario">Cancelar</button>
+      <button class="btn-primario">Confirmar Selección</button>
+    </footer>
+  </div>
+</div>

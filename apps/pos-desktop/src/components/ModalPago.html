@@ -1,0 +1,49 @@
+<div class="modal-overlay">
+  <div class="modal-pago-container">
+    <header class="modal-pago-header">
+      <h2>Procesar Pago</h2>
+      <button class="btn-cerrar">&times;</button>
+    </header>
+
+    <div class="modal-pago-body">
+      <!-- Total a cobrar -->
+      <div class="pago-summary">
+        <span class="summary-label">Total a Pagar</span>
+        <span class="summary-monto">$25.00</span>
+      </div>
+
+      <!-- Selección de Método de Pago -->
+      <div class="metodos-grid">
+        <button class="btn-metodo active">
+          <span class="metodo-icon">💵</span>
+          <span>Efectivo</span>
+        </button>
+        <button class="btn-metodo">
+          <span class="metodo-icon">💳</span>
+          <span>Tarjeta</span>
+        </button>
+        <button class="btn-metodo">
+          <span class="metodo-icon">📱</span>
+          <span>Transferencia / QR</span>
+        </button>
+      </div>
+
+      <!-- Entrada de dinero para cambio (solo Efectivo) -->
+      <div class="calculadora-pago">
+        <div class="input-group">
+          <label for="monto-recibido">Monto Recibido</label>
+          <input type="number" id="monto-recibido" placeholder="0.00" class="input-monto">
+        </div>
+        <div class="cambio-box">
+          <span>Cambio a devolver:</span>
+          <strong class="monto-cambio">$0.00</strong>
+        </div>
+      </div>
+    </div>
+
+    <footer class="modal-pago-footer">
+      <button class="btn-cancelar-pago">Volver</button>
+      <button class="btn-confirmar-pago">Finalizar Venta</button>
+    </footer>
+  </div>
+</div>

@@ -164,3 +164,259 @@ body {
   background-color: #ef4444;
   color: white;
 }
+
+
+
+
+/* Tarjeta de Producto */
+.card-producto {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  cursor: pointer;
+}
+
+.card-producto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-imagen-placeholder {
+  height: 90px;
+  background-color: #fef2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.card-contenido {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-titulo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.card-categoria-tag {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.card-precio {
+  font-weight: bold;
+  color: #dc2626;
+  font-size: 1.05rem;
+}
+
+.btn-agregar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Ítem en la Comanda / Ticket */
+.item-ticket {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-nombre {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.item-precio-unitario {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.item-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-cantidad-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+.btn-cant {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #374151;
+  cursor: pointer;
+  width: 20px;
+}
+
+.cant-numero {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.item-subtotal {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+
+
+
+
+/* Modal Overlay y Contenedor Base */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modal-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.btn-cerrar-modal {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Opciones de Combos */
+.grupo-combo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grupo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grupo-header h3 {
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.badge-requerido {
+  font-size: 0.75rem;
+  background-color: #fef2f2;
+  color: #dc2626;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.opciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.opcion-card {
+  border: 2px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.opcion-card:hover {
+  border-color: #fca5a5;
+}
+
+.opcion-card.active {
+  border-color: #dc2626;
+  background-color: #fef2f2;
+  font-weight: 600;
+  color: #991b1b;
+}
+
+.modal-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
